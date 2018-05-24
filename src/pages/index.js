@@ -15,11 +15,12 @@ class Index extends React.Component {
           </header>
 
           <section>
-            <h3>Projects</h3>
             <div className="flex-container">
-              {projects.map((project, index) => (
-                <ProjectCard {...project} index={index} />
-              ))}
+              {projects
+                .filter(p => p.featured)
+                .map((project, index) => (
+                  <ProjectCard {...project} index={index} />
+                ))}
             </div>
           </section>
         </div>

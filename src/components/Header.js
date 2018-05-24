@@ -4,7 +4,7 @@ import React from "react";
 const Header = ({ onToggleMenu }) => {
   return (
     <header id="header">
-      <h1 id="logo">{/* <Link to="/">Alexis - Indie Game Dev</Link> */}</h1>
+      <h1 id="logo">Alexis Giard</h1>
       <nav id="nav">
         <ul>
           <li>
@@ -12,11 +12,13 @@ const Header = ({ onToggleMenu }) => {
               Home
             </Link>
           </li>
-          {/* <li>
-            <Link onClick={onToggleMenu} to="/projects">
-              Projects
-            </Link>
-          </li> */}
+          {
+            <li>
+              <Link onClick={onToggleMenu} to="/projects">
+                Projects
+              </Link>
+            </li>
+          }
           <li>
             <Link onClick={onToggleMenu} to="/blog">
               Blog

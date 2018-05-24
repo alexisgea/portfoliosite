@@ -10,12 +10,10 @@ class Index extends React.Component {
       <div id="main" className="wrapper style1">
         <div className="container">
           <header className="major">
-            <h2>Alexis Giard</h2>
-            <p>Indie Game developer</p>
+            <h2>Projects</h2>
           </header>
 
           <section>
-            <h3>Projects</h3>
             <div className="flex-container">
               {projects.map((project, index) => (
                 <ProjectCard {...project} index={index} />

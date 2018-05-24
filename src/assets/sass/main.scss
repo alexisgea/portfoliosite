@@ -2178,3 +2178,11 @@ a.card:hover {
 .blog-post {
   margin: 3rem 0;
 }
+
+img.static {
+  position: absolute;
+}
+
+a.card:hover img.static {
+  opacity: 0;
+}
