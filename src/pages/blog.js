@@ -19,14 +19,23 @@ class Blog extends React.Component {
             <h2>Blog</h2>
             {posts.map(({ node }) => {
               const title = get(node, "frontmatter.title") || node.fields.slug;
+
               return (
-                <div key={node.fields.slug} className="blog-post">
-                  <h3>
-                    <Link to={node.fields.slug}>{title}</Link>
-                  </h3>
-                  <em>{node.frontmatter.date}</em>
-                  <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-                </div>
+                <Link to={node.fields.slug}>
+                  <div key={node.fields.slug} className="blog-post">
+                    {node.frontmatter.image && (
+                      <img
+                        src={node.frontmatter.image.childImageSharp.resize.src}
+                        alt={node.frontmatter.title}
+                      />
+                    )}
+                    <div className="blog-meta-info">
+                      <h3>{title}</h3>
+                      <em>{node.frontmatter.date}</em>
+                      <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+                    </div>
+                  </div>
+                </Link>
               );
             })}
           </section>
@@ -55,6 +64,15 @@ export const pageQuery = graphql`
           }
           frontmatter {
             date(formatString: "DD MMMM, YYYY")
+            image {
+              childImageSharp {
+                resize(width: 590) {
+                  src
+                  height
+                  width
+                }
+              }
+            }
             title
           }
         }

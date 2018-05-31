@@ -2180,7 +2180,22 @@ a.card:hover {
 }
 
 .blog-post {
+  color: _palette(fg);
   margin: 3rem 0;
+
+  @media (min-width: 600px) {
+    align-items: flex-start;
+    display: flex;
+  }
+}
+
+.blog-post > img {
+  margin-right: 1em;
+  max-width: 100%;
+
+  @media (min-width: 600px) {
+    width: 33%;
+  }
 }
 
 img.static {
