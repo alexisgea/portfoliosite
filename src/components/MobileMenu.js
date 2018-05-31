@@ -6,13 +6,12 @@ const MobileMenu = ({ onToggleMenu }) => {
     <div>
       <div id="titleBar">
         <a href="#" onClick={onToggleMenu} className="toggle" />
-        <span className="title">Alexis Giard</span>
+        <span className="title">
+          <Link to="/">Alexis Giard</Link>
+        </span>
       </div>
       <div id="navPanel">
         <nav>
-          <Link className="link depth-0" onClick={onToggleMenu} to="/">
-            Home
-          </Link>
           {
             <Link
               className="link depth-0"

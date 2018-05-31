@@ -44,7 +44,7 @@
   }
 }
 
-$size-wrapper-pad-tb: 6em;
+$size-wrapper-pad-tb: 3em;
 $size-wrapper-pad-lr: 3em;
 
 /* Basic */
@@ -395,9 +395,13 @@ header {
   }
 
   &.major {
-    margin: 0 0 (_size(element-margin) * 2) 0;
+    margin: 0 0 (_size(element-margin)) 0;
     position: relative;
     text-align: center;
+
+    & p {
+      margin-bottom: 0;
+    }
 
     &:after {
       background: _palette(accent1);
@@ -1596,7 +1600,7 @@ body.is-touch {
 /* Large */
 
 @include breakpoint(large) {
-  $size-wrapper-pad-tb: 4.5em;
+  $size-wrapper-pad-tb: 2.5em;
   $size-wrapper-pad-lr: 2.5em;
 
   /* Basic */
@@ -1667,7 +1671,7 @@ body.is-touch {
 /* Medium */
 
 @include breakpoint(medium) {
-  $size-wrapper-pad-tb: 4.5em;
+  $size-wrapper-pad-tb: 2.5em;
   $size-wrapper-pad-lr: 2.5em;
 
   /* Basic */
@@ -1759,7 +1763,7 @@ body.is-touch {
 }
 
 @include breakpoint(small) {
-  $size-wrapper-pad-tb: 3.25em;
+  $size-wrapper-pad-tb: 1.5em;
   $size-wrapper-pad-lr: 1.5em;
 
   /* Basic */
@@ -2031,7 +2035,7 @@ body.is-touch {
 /* XSmall */
 
 @include breakpoint(xsmall) {
-  $size-wrapper-pad-tb: 3em;
+  $size-wrapper-pad-tb: 1.25em;
   $size-wrapper-pad-lr: 1.25em;
 
   /* Basic */

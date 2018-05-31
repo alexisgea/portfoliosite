@@ -4,14 +4,11 @@ import React from "react";
 const Header = ({ onToggleMenu }) => {
   return (
     <header id="header">
-      <h1 id="logo">Alexis Giard</h1>
+      <h1 id="logo">
+        <Link to="/">Alexis Giard</Link>
+      </h1>
       <nav id="nav">
         <ul>
-          <li>
-            <Link onClick={onToggleMenu} to="/">
-              Home
-            </Link>
-          </li>
           {
             <li>
               <Link onClick={onToggleMenu} to="/projects">
