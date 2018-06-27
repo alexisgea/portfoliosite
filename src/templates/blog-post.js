@@ -1,11 +1,13 @@
-import React from "react";
+import { DiscussionEmbed } from "disqus-react";
+import get from "lodash/get";
 import Helmet from "react-helmet";
 import Link from "gatsby-link";
-import get from "lodash/get";
+import React from "react";
 
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark;
+    const postId = post.id.match(/\/posts\/(.*?)\//)[1];
     const siteTitle = get(this.props, "data.site.siteMetadata.title");
     const { previous, next } = this.props.pathContext;
 
@@ -18,6 +20,16 @@ class BlogPostTemplate extends React.Component {
             <em>{post.frontmatter.date}</em>
           </p>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
+
+          <DiscussionEmbed
+            shortname="alexisgiard"
+            config={{
+              url: `https://www.alexisgiard.com/${postId}`,
+              identifier: postId,
+              title: post.frontmatter.title
+            }}
+          />
+
           <hr />
 
           <ul

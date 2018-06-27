@@ -1,14 +1,11 @@
 import get from "lodash/get";
 import Helmet from "react-helmet";
 import Link from "gatsby-link";
-import projects from "../projects";
-import ProjectCard from "../components/ProjectCard";
 import React from "react";
 
 class Blog extends React.Component {
   render() {
     const title = get(this, "props.data.site.siteMetadata.title");
-    const subTitle = get(this, "props.data.site.siteMetadata.subTitle");
     const posts = get(this, "props.data.allMarkdownRemark.edges");
 
     return (
