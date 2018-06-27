@@ -9,9 +9,7 @@ class Index extends React.Component {
     return (
       <div id="main" className="wrapper style1">
         <div className="container">
-          <header className="major">
-            <h2>Projects</h2>
-          </header>
+          <h2>Projects</h2>
 
           <section>
             <div className="flex-container">

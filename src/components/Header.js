@@ -5,7 +5,7 @@ const Header = ({ onToggleMenu }) => {
   return (
     <header id="header">
       <h1 id="logo">
-        <Link to="/">Alexis Giard</Link>
+        <Link to="/">Alexis - Game Developer</Link>
       </h1>
       <nav id="nav">
         <ul>

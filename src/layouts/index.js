@@ -1,10 +1,8 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import Link from "gatsby-link";
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 
 import "../assets/sass/main.scss";
-// import "../assets/css/main.css";
 import MobileMenu from "../components/MobileMenu";
 
 class Template extends Component {
@@ -20,7 +18,6 @@ class Template extends Component {
 
   render() {
     const { location, children } = this.props;
-    let header;
 
     let rootPath = `/`;
     if (typeof __PREFIX_PATHS__ !== `undefined` && __PREFIX_PATHS__) {
