@@ -1900,7 +1900,7 @@ body.is-touch {
     @include vendor("transition", "transform #{_duration(navPanel)} ease");
     display: block;
     height: 44px;
-    left: 0;
+    right: 0;
     position: fixed;
     top: 0;
     width: 100%;
@@ -1925,10 +1925,10 @@ body.is-touch {
     .toggle {
       @include icon;
       height: 60px;
-      left: 0;
+      right: 0;
       position: absolute;
       top: 0;
-      width: 90px;
+      width: 54px;
       outline: 0;
       border: 0;
 
@@ -1951,11 +1951,11 @@ body.is-touch {
 
   #navPanel {
     @include vendor("backface-visibility", "hidden");
-    @include vendor("transform", "translateX(#{_size(navPanel) * -1})");
+    @include vendor("transform", "translateX(#{_size(navPanel)})");
     @include vendor("transition", ("transform #{_duration(navPanel)} ease"));
     display: block;
     height: 100%;
-    left: 0;
+    right: 0;
     overflow-y: auto;
     position: fixed;
     top: 0;
@@ -2012,11 +2012,11 @@ body.is-touch {
   .body {
     &.navPanel-visible {
       #page-wrapper {
-        @include vendor("transform", "translateX(#{_size(navPanel)})");
+        @include vendor("transform", "translateX(#{_size(navPanel) * -1})");
       }
 
       #titleBar {
-        @include vendor("transform", "translateX(#{_size(navPanel)})");
+        @include vendor("transform", "translateX(#{_size(navPanel) * -1})");
       }
 
       #navPanel {
