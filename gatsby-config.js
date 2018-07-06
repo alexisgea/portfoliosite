@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: "Alexis - Indie Game Dev",
+    title: "Alexis - Game Devrloper",
     subTitle: "Game Designer - Programmer - Dreamer",
-    author: "Alexis",
-    siteUrl: "https://gatsbyjs.github.io/gatsby-starter-blog/"
+    author: "Alexis Giard",
+    siteUrl: "https://alexisgiard.com/"
   },
   plugins: [
     {
@@ -40,7 +40,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+      trackingId: `UA-26420417-1`,
       }
     },
     `gatsby-plugin-react-helmet`,
