@@ -4,12 +4,16 @@ import React from "react";
 const Footer = () => (
   <footer id="footer">
     <ul className="icons">
-      {/* <li>
-        <a href="#" className="icon alt fa-twitter" target="_blank">
+      <li>
+        <a
+          href="https://twitter.com/alexisgiard"
+          className="icon alt fa-twitter"
+          target="_blank"
+        >
           <span className="label">Twitter</span>
         </a>
-      </li> */}
-      <li>
+      </li>
+      {/* <li>
         <a
           href="https://www.facebook.com/alexis.gia"
           className="icon alt fa-facebook"
@@ -17,7 +21,7 @@ const Footer = () => (
         >
           <span className="label">Facebook</span>
         </a>
-      </li>
+      </li> */}
       <li>
         <a
           href="https://ch.linkedin.com/in/alexis-giard-52846718"
