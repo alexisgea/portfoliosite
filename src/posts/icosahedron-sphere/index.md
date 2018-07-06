@@ -1,7 +1,7 @@
 ---
 title: Generating an Icosahedron sphere with correct UV mapping
 date: "2018-07-08"
-image: "./wireframe_icosphere.png"
+image: "./wireframe_icosphere.PNG"
 ---
 
 Creating space simulations and models is something I like to do quite a bit during my free time. And as one might expect, I need a lot of sphere with different radius and resolution for the planets, moons and the likes. For a long time I used the base Unity sphere which when scaled up gets very ugly. I also quickly ran into complexities between the scale of the object in Unity and the size of it in my calculations. I then tried to generate different size of sphere in Blender to have higher resolutions at different scales, but it ended up even more confusing to have many different sphere mesh.
@@ -10,11 +10,11 @@ So eventually I decided I should start generating my own spheres. Ideally my sol
 
 After some thoughts, I decided to go the way of the icosahedron. The major challenges of the icosahedron is the mapping of UV coordinates, even more-so than for other types of sphere. As there are no straight line going from pole to pole on an icosahedron some face will be on both sides of a UV map and will create a ziggzagging distortion effect. The "MFT Development" link at the end of the post has a detailed explanation of the issue. It can get really confusing and as advised in the post I had to write down vertex by vertex what as happening.
 
-![Warping effect and final result](./warping_and_result.png)
+![Warping effect and final result](./warping_and_result.PNG)
 
 In the end, I am happy with the results and I find the icosahedron sphere very nice. Unfortunately at the poles there is a loss of data (part of the image is not mapped at all) and at lower resolution it is very visible. (I think this happens with all types of sphere, but for a UV Sphere.) So if you want nice looking poles a high resolution UV Sphere is the best. The biggest downside of UV sphere is that it will waste vertices at the pole by having way more than at the equator. I have included a UV Sphere generator in the project so you can test and see for yourself.
 
-![Loss of data difference on each pole.](./pole_warping.png)
+![Loss of data difference on each pole.](./pole_warping.PNG)
 
 You can get the [Source code](https://github.com/alexisgea/sphere_mesher) from github. As a follow up I'd like to add my own cube sphere and port both the UV and Cube Sphere to a quad-tree where the subdivision is based on the camera distance.
 
@@ -31,4 +31,4 @@ Other ressources and inspiration:
 [Unity Wiki](http://wiki.unity3d.com/index.php/ProceduralPrimitives): how to create a basic sphere.
 [Catlike Coding](https://web.archive.org/web/20171218054621/http://www.binpress.com/tutorial/creating-an-octahedron-sphere/162): awesome tutorial and explanation of why an icosahedron gives less distortion.
 
-![Final result comparison](./final_result.jpg)
+![Final result comparison](./final_result.PNG)
