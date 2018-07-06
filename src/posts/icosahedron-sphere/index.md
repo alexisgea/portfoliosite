@@ -29,7 +29,6 @@ float v = (Mathf.Asin(vertCoord.y) / Mathf.PI) + 0.5f;
 ```
 
 Other ressources and inspiration:
-
 * [MFT Development](https://mft-dev.dk/uv-mapping-sphere/): detailed explanation of the warping issue.
 * [Unity Wiki](http://wiki.unity3d.com/index.php/ProceduralPrimitives): how to create a basic sphere.
 * [Catlike Coding](https://web.archive.org/web/20171218054621/http://www.binpress.com/tutorial/creating-an-octahedron-sphere/162): awesome tutorial and explanation of why an icosahedron gives less distortion.
