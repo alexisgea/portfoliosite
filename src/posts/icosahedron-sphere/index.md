@@ -20,7 +20,7 @@ You can get the [source code](https://github.com/alexisgea/sphere_generator) fro
 
 As a follow up I'd like to add my own cube sphere and port both the UV and Cube Sphere to a quad-tree where the subdivision is based on the camera distance.
 
-To use it, drop the SphereMesher.cs script on a gameobject to get the sphere. The generation of the mesh itself happens in the IcoSphereBuilder.cs class.
+To use it, drop the SphereGenerator.cs script on a gameobject to get the sphere. The generation of the mesh itself happens in the SphereBuilder.cs class.
 
 Getting hte UV mapping orientated as Unity was also a bit confusing and I ended up with the following equation:
 ``` C#
