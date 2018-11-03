@@ -52,7 +52,7 @@ const projects = [
       "A procedural generator creating realistic and to real scale stellar systems",
     image: sp4x,
     gif: sp4xGif,
-    link: "http://asteroidlab.com/demos/sp4x",
+    link: "https://asteroidlab.com/demos/sp4x",
     featured: true
   },
   {
