@@ -16,11 +16,11 @@ In the end, I am happy with the results and I find the icosahedron sphere very n
 
 ![Loss of data difference on each pole.](./pole_warping.PNG)
 
-You can get the [source code](https://github.com/alexisgea/sphere_mesher) from github.
+You can get the [source code](https://github.com/alexisgea/sphere_generator) from github.
 
 As a follow up I'd like to add my own cube sphere and port both the UV and Cube Sphere to a quad-tree where the subdivision is based on the camera distance.
 
-To use it, drop the SphereMesher.cs script on a gameobject to get the sphere. The generation of the mesh itself happens in the IcoSphereBuilder.cs class.
+To use it, drop the SphereGenerator.cs script on a gameobject to get the sphere. The generation of the mesh itself happens in the SphereBuilder.cs class.
 
 Getting hte UV mapping orientated as Unity was also a bit confusing and I ended up with the following equation:
 ``` C#
@@ -34,3 +34,6 @@ Other ressources and inspiration:
 * [Catlike Coding](https://web.archive.org/web/20171218054621/http://www.binpress.com/tutorial/creating-an-octahedron-sphere/162): awesome tutorial and explanation of why an icosahedron gives less distortion.
 
 ![Final result comparison](./final_result.PNG)
+
+
+Edit: [check the followup post on the subject](https://www.alexisgiard.com/icosahedron-sphere-remastered/)
