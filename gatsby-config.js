@@ -1,7 +1,6 @@
 module.exports = {
   siteMetadata: {
     title: "Alexis - Game Developer",
-    // subTitle: "Game Designer - Programmer - Dreamer",
     author: "Alexis Giard",
     siteUrl: "https://alexisgiard.com/"
   },
