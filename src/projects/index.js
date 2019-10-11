@@ -12,7 +12,7 @@ import tiny from "./tiny_3_2.png";
 import tinyGif from "./tiny_3_2.gif";
 
 // Spells of Genesis: https://spellsofgenesis.com/
-// Procedural Stellar System Generator: http://asteroidlab.com/demos/sp4x/
+// Procedural Stellar System Generator: https://alexisgea.itch.io/stellar-system-generator
 // Cheat N Teach: https://i3.itch.io/cheatnteach
 // You re Safe Now: https://globalgamejam.org/2017/games/youre-safe-now
 // Greedy Mummy II: https://ldjam.com/events/ludum-dare/40/greedy-mummy-ii
@@ -52,7 +52,7 @@ const projects = [
       "A procedural generator creating realistic and to real scale stellar systems",
     image: sp4x,
     gif: sp4xGif,
-    link: "https://asteroidlab.com/demos/sp4x",
+    link: "https://alexisgea.itch.io/stellar-system-generator",
     featured: true
   },
   {
