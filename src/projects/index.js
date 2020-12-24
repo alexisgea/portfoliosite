@@ -20,6 +20,15 @@ import tinyGif from "./tiny_3_2.gif";
 
 const projects = [
   {
+    title: "Terraformers",
+    description:
+      "A 3X game about colonzing and terraforming mars",
+    image: terraf,
+    gif: terrafGif,
+    link: "https://terraformers-game.com",
+    featured: true
+  },
+  {
     title: "Spells of Genesis",
     description:
       "A deck-building & card-collecting mobile game with blockchain assets",
@@ -71,6 +80,33 @@ const projects = [
     image: cheat,
     gif: cheatGif,
     link: "https://i3.itch.io/cheatnteach",
+    featured: true
+  },
+  {
+    title: "Rubik's Cube",
+    description:
+      "A Rubik's Cube simulator",
+    image: cube,
+    gif: cubeGif,
+    link: "https://i3.itch.io/rubikscube",
+    featured: true
+  },
+  {
+    title: "Space App Challenge",
+    description:
+      "An interactive app about discovering Earth",
+    image: spaceApp,
+    gif: spaceAppGif,
+    link: "https://alexisgea.itch.io/look-at-earth",
+    featured: true
+  },
+  {
+    title: "Game of Life",
+    description:
+      "An interactive app about discovering Earth",
+    image: spaceApp,
+    gif: spaceAppGif,
+    link: "https://alexisgea.itch.io/look-at-earth",
     featured: true
   }
 ];
